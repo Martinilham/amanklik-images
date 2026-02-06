@@ -1,0 +1,39 @@
+.root{--bg:#f7f8fb;--card:#fff;--accent:#2563eb}
+:root{--bg:#f7f8fb;--card:#fff;--accent:#2563eb}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;line-height:1.4;background:var(--bg);margin:0;color:#0f172a}
+.container{max-width:980px;margin:36px auto;padding:20px}
+h1{margin:0 0 8px 0;font-size:20px}
+h2{margin:14px 0 8px 0;font-size:16px;color:#334155}
+.muted{color:#64748b}
+.upload-card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06);}
+.row{display:flex;gap:12px;align-items:flex-start}
+.col{flex:1}
+.file-col{flex-basis:220px}
+.action-col{flex-basis:120px}
+.label{font-size:12px;color:#475569;margin-bottom:6px}
+.input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8}
+.native-file{display:none}
+.file-controls{display:flex;align-items:center;gap:8px}
+.file-btn{background:#fff;border:1px solid #e2e8f0;padding:10px 14px;border-radius:8px;cursor:pointer;min-height:44px;display:inline-flex;align-items:center}
+.file-name{font-size:13px;color:#0f172a;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.remove-btn{background:transparent;border:none;color:#ef4444;cursor:pointer;font-size:13px}
+.thumb-preview{margin-top:8px;border-radius:8px;overflow:hidden;width:100%;height:80px}
+.thumb-preview img{width:100%;height:100%;object-fit:cover}
+
+/* Ensure upload button height matches input/button heights for a neat row */
+.action-col .btn{min-height:44px;padding:10px 14px}
+.col .input{min-height:44px}
+.btn{width:100%;background:var(--accent);color:#fff;border:none;padding:10px;border-radius:8px;cursor:pointer}
+.message{color:green;margin-top:8px}
+.error{color:#ef4444}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:12px}
+.card{background:var(--card);border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06);overflow:hidden;border:1px solid #f1f5f9}
+.thumb{height:160px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:8px;top:8px;background:rgba(0,0,0,0.6);color:#fff;padding:6px 8px;border-radius:999px;font-size:12px}
+.meta{padding:12px}
+.title{font-size:14px;margin-bottom:8px;color:#0f172a}
+.actions{display:flex;gap:8px}
+.actions button,.actions a{font-size:13px;padding:6px 10px;border-radius:8px;border:1px solid #e6e6e6;background:#fff;cursor:pointer;text-decoration:none;color:#0f172a}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:24px;background:#111;color:#fff;padding:8px 12px;border-radius:8px;opacity:0.95}
