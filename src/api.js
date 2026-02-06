@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000' || '' // set to http://localhost:5000 for dev if needed
+const API_BASE = 'https://amanklik-images-api.vercel.app' || '' // set to http://localhost:5000 for dev if needed
 
 export async function fetchImages() {
   const res = await fetch(`${API_BASE}/api/images`)
